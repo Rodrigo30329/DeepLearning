@@ -1,6 +1,7 @@
 import cv2
 import matplotlib.pyplot as plt
 
+
 def main():
     imgpath = "C:\\Users\\joser\\Pictures\\Saved Pictures\\DeepL\\Originales\\Imagen1.jfif"
     img = cv2.imread(imgpath, 0)

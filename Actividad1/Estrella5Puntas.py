@@ -33,4 +33,3 @@ plt.plot(XEs8, YEs8, linewidth=4)
 plt.plot(XEs9, YEs9, linewidth=4)
 plt.plot(XEs10, YEs10, linewidth=4)
 plt.show()
-
