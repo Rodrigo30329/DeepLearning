@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 def main():
-    imgpath = "C:\\Users\\joser\\Pictures\\Saved Pictures\\DeepL\\Originales\\Imagen1.jfif"
+    imgpath = "Actividad1\\Imagenes\\Imagen1.jfif"
     img = cv2.imread(imgpath, 0)
 
     plt.imshow(img)

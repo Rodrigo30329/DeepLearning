@@ -7,7 +7,7 @@ This is a temporary script file.
 import cv2
 
 def main():
-    imgpath = "C:\\Users\\joser\\Pictures\\Saved Pictures\\Imagen1.jfif"
+    imgpath = "Actividad1\\Imagenes\\Imagen1.jfif"
     img = cv2.imread(imgpath)
     cv2.namedWindow('imagen', cv2.WINDOW_AUTOSIZE)
     cv2.imshow('imagen',img)

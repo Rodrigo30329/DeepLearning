@@ -7,8 +7,8 @@ This is a temporary script file.
 import cv2
 
 def main():
-    imgpath = "C:\\Users\\joser\\Pictures\\Saved Pictures\\DeepL\\Originales\\Imagen1.jfif"
-    savpath = "C:\\Users\\joser\\Pictures\\Saved Pictures\\DeepL\\Cambiadas\\Imagen1Edit.jpg"
+    imgpath = "Actividad1\\Imagenes\\Imagen1.jfif"
+    savpath = "Actividad1\\Imagenes\\Imagen1Edit.jpg"
     img = cv2.imread(imgpath)
     # escala de grises
     # img = cv2.imread(imgpath, 0) 

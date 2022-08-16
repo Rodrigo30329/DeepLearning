@@ -2,7 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 def main():
-    foldpath = "C:\\Users\\joser\\Pictures\\Saved Pictures\\DeepL\\Originales\\"
+    foldpath = "Actividad1\\Imagenes\\"
     
     img1path = foldpath + "Imagen1.jfif"    
     img1 = cv2.imread(img1path, 0)
