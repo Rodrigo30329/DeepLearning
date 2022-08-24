@@ -21,7 +21,6 @@ for epoca in range(Epocas):
         Y = Ynet
         #cáculo error
         Error = (Yd[p[i]]-Y)
-        
         W1 = W1+Alfa*Error*X2[p[i]]
         W2 = W2+Alfa*Error*X2[p[i]]
         W0 = W0+Alfa*Error*1        
