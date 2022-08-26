@@ -27,3 +27,7 @@ for epoca in range(Epocas):
     Ye = W1*X1+W2*X2+W0
     E2 = np.sum((Yd-Ye)**2)/2
     print(epoca, E2)
+print(E2)
+plt.figure(1)
+plt.plot(E2)
+plt.show()
