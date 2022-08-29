@@ -17,7 +17,7 @@ plt.close()
 #x2=np.array([0.1,   0.1, 1.2, 0.6, 0.8, 0.3, 1.2, 0.3,  0.9,  1.5])
 #Yd=np.array([0,     0,    1,   1,    1,  0,   1,     0,    1,   1  ])
 
-df=pd.read_excel('Datos12022DL.xlsx','Sheet7')
+df=pd.read_excel(r'Datos12022DL.xlsx',sheet_name='Sheet7')
 dfa=df.values
 X=dfa[:,0]
 Yd=dfa[:,3]
