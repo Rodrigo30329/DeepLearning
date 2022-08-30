@@ -36,11 +36,3 @@ for epoca in range(Epocas):
     Ye = np.heaviside(Ye,1)
     E2 = np.sum((Yd-Ye)**2)/2
     print(epoca, E2)
-print(E2)
-plt.figure(1)
-plt.plot(E2)
-<<<<<<< HEAD
-plt.grid()
-=======
-plt.show()
->>>>>>> f00cf825148495c19b97c3360c60d0c371eca631
