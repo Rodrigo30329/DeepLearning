@@ -25,7 +25,6 @@ plt.figure(1)
 plt.plot(X,Yd,'*b')
 #plt.plot(X[30:40,0],X[30:40,1],'*r',X[0:10,0],X[0:10,1],'*r')
 
-
 alfa=0.01
 W0=np.random.randn(1)
 W1=np.random.randn(1)
