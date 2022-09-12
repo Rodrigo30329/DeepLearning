@@ -40,9 +40,7 @@ for epoca in range(0,epocas):
         # Funcion de activacion
         #if (Ynet<0):
         #    Y=0
-        #else: Y=1
-                
-        
+        #else: Y=1              
         
         error=(Yd[p[i]]-Y)
         #W2=W2+alfa*error*X[p[i],1]
