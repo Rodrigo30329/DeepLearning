@@ -24,9 +24,19 @@ plt.show(1)
 x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.1, random_state=0)
 
 MLP_Clas = Sequential()
-MLP_Clas.add(Dense(output_dim=4, init='uniform', activation='relu', input_dim=2))
-MLP_Clas.add(Dense(output_dim=4, init='uniform', activation='relu'))
+MLP_Clas.add(Dense(output_dim=6, init='uniform', activation='relu', input_dim=2))
+MLP_Clas.add(Dense(output_dim=6, init='uniform', activation='relu'))
 MLP_Clas.add(Dense(output_dim=1, init='uniform', activation='sigmoid'))
 
-MLP_Clas.copile('adam', los='binary_crossentropy', metrics=['accuracy'])
-MLP_CLas.fit(x_train, y_train, batch_size=20, nb_epoch=600)
+MLP_Clas.compile('adam', loss='binary_crossentropy', metrics=['accuracy'])
+
+history=MLP_Clas.fit(x_train, y_train, batch_size=20, nb_epoch=600)
+
+Yt=MLP_Clas.predict(x_test)
+Yt_01=np.heaviside(Yt-0.5,1)
+print("Salida= ", Yt_01. T)
+print("deseado= ", y_test.T)
+
+plt.figure(1)
+plt.plot(history.history['loss'])
+plt.grid()
