@@ -24,13 +24,13 @@ plt.show(1)
 x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.1, random_state=0)
 
 MLP_Clas = Sequential()
-MLP_Clas.add(Dense(output_dim=6, init='uniform', activation='relu', input_dim=2))
-MLP_Clas.add(Dense(output_dim=6, init='uniform', activation='relu'))
-MLP_Clas.add(Dense(output_dim=1, init='uniform', activation='sigmoid'))
+MLP_Clas.add(Dense(units=6, kernel_initializer='uniform', activation='relu', input_dim=2))
+MLP_Clas.add(Dense(units=6, kernel_initializer='uniform', activation='relu'))
+MLP_Clas.add(Dense(units=1, kernel_initializer='uniform', activation='sigmoid'))
 
 MLP_Clas.compile('adam', loss='binary_crossentropy', metrics=['accuracy'])
 
-history=MLP_Clas.fit(x_train, y_train, batch_size=20, nb_epoch=600)
+history=MLP_Clas.fit(x_train, y_train, batch_size=20, epochs=600)
 
 Yt=MLP_Clas.predict(x_test)
 Yt_01=np.heaviside(Yt-0.5,1)
