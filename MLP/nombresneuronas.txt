@@ -1,0 +1,4 @@
+Perceptron = Entrada a neurona con salida con función de activación step usada en clasificadores
+Adaline = Entrada a neurona con salida con función de activación Lineal usada en regresiones
+Logistic regresion = Entrada a neurona con salida con función de activación sigmoidal usada en regresiones
+MLP o Multi Layer Perceptron = Entrada a neurona con salida con mas neuronas con backpropagation 
