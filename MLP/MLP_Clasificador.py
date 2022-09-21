@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -13,13 +15,14 @@ x=dfa[:,0:2]
 y=dfa[:,2]
 
 plt.figure(1)
+
 for i in range(0, len(y)):
     if y[i] == 0:
         plt.plot(x[i,0],x[i,1],'or')
     else:
         plt.plot(x[i,0],x[i,1],'og')
 
-plt.show(1)
+plt.show()
 
 x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.1, random_state=0)
 
